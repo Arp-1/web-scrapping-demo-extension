@@ -3,6 +3,12 @@ A small and simple extension to fetch data from a website
 
 # Using the extension
 
+## Working Demo
+
+After web scrapping is enabled, clicking on any element would push it to firebase cloud firestore.
+
+![Demo](https://user-images.githubusercontent.com/37845584/55293725-43ccff80-5417-11e9-8402-e7621876cfae.gif)
+
 ## Configuring the extension
 
 This extension uses [firebase](https://www.firebase.google.com/) as its backend. To run this extension, navigate to `src/background/background.js` and change this code snippet:
