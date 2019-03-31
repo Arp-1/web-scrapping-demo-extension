@@ -1,0 +1,21 @@
+#btn-scrapping {
+    border: 1px solid greenyellow;
+    background-color: white;
+    width: 90%;
+    height: 90%;
+    margin: 1px;
+    border-radius: 0.5em;
+    transition: all 0.25s ease 0s;
+}
+
+#btn-scrapping:hover {
+    background-color: greenyellow;
+    transition-delay: 100ms;
+    transition-timing-function: linear;
+}
+html,body{
+    min-width: 100px;
+    min-height: 20px;
+    width: 200px;
+    height: 40px
+}

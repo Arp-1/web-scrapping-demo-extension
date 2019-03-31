@@ -1,0 +1,26 @@
+{
+    "name": "web-scrapper-demo-tool",
+    "description": "Scrap elements from a web page by clicking on them",
+    "version":"1.0.0",
+    "manifest_version": 2,
+    "browser_action": {
+        "default_popup": "src/popup/popup.html",
+    },
+    "background": {
+        "scripts": ["src/background/firebase-app.js","src/background/firebase-firestore.js","src/background/background.js"],
+        "persistent": false
+    },
+    "permissions": ["activeTab", "storage", "tabs", "<all_urls>"],
+    "web_accessible_resources": [
+        "src/contentScripts/contentScript.css"
+    ],
+    "content_scripts":
+    [
+        {
+            "matches": ["*://*/*"],
+            "all_frames": true,
+            "js": ["src/contentScripts/initializeSettings.js"]
+        }
+    ],
+    "content_security_policy":"script-src 'self' https://www.gstatic.com/ https://*.firebaseio.com https://www.googleapis.com; object-src 'self' https://www.gstatic.com/ https://*.firebaseio.com https://www.googleapis.com"
+}
