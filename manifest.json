@@ -4,7 +4,7 @@
     "version":"1.0.0",
     "manifest_version": 2,
     "browser_action": {
-        "default_popup": "src/popup/popup.html",
+        "default_popup": "src/popup/popup.html"
     },
     "background": {
         "scripts": ["src/background/firebase-app.js","src/background/firebase-firestore.js","src/background/background.js"],
