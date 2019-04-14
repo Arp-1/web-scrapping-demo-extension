@@ -7,7 +7,7 @@ A small and simple extension to fetch data from a website
 
 After web scrapping is enabled, clicking on any element would push it to firebase cloud firestore.
 
-![Demo](https://user-images.githubusercontent.com/37845584/55293725-43ccff80-5417-11e9-8402-e7621876cfae.gif)
+![Demo](https://user-images.githubusercontent.com/37845584/56088238-05fdbb80-5e9a-11e9-9279-42b53759c40b.gif)
 
 ## Configuring the extension
 
