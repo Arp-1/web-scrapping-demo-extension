@@ -30,6 +30,10 @@ const clickHandler = (event) =>
     let coll = window.location.href, obj = {};
     coll = coll.replace(/[\/\\]/g, ':');
     console.log(coll);
+    event.target.classList.add("_clickedElement");
+    window.setTimeout(()=>{
+        event.target.classList.remove("_clickedElement");
+    }, 200);
     for(prop in event.target)
     {
         if((typeof event.target[prop] === "string" || typeof event.target[prop] === "number" || typeof event.target[prop] === "boolean") && event.target[prop])

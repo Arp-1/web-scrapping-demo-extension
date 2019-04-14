@@ -1,3 +1,7 @@
 ._selectedElement{
     border: 2px blueviolet dotted;
 }
+
+._clickedElement{
+    background-color: blueviolet;
+}
